@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script> 
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JQuery," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Mr.Tao's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧获取并设置 CSS 类123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960">
+<meta name="keywords" content="JQuery">
+<meta property="og:type" content="article">
+<meta property="og:title" content="准备软考复习">
+<meta property="og:url" content="http://yoursite.com/2018/10/22/准备软考复习/index.html">
+<meta property="og:site_name" content="Mr.Tao&#39;s Blog">
+<meta property="og:description" content="最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧获取并设置 CSS 类123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-22T04:47:19.319Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="准备软考复习">
+<meta name="twitter:description" content="最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧获取并设置 CSS 类123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/22/准备软考复习/"/>
+
+
+
+
+
+  <title>准备软考复习 | Mr.Tao's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+		<a href="https://github.com/tt0821"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mr.Tao's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/22/准备软考复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mr.Tao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3215320780,615845425&fm=26&gp=0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.Tao's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">准备软考复习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-22T12:28:05+08:00">
+                2018-10-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/10/22/准备软考复习/" class="leancloud_visitors" data-flag-title="准备软考复习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，"><a href="#最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，" class="headerlink" title="最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，"></a>最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，</h1><h1 id="是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧"><a href="#是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧" class="headerlink" title="是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧"></a>是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧</h1><h2 id="获取并设置-CSS-类"><a href="#获取并设置-CSS-类" class="headerlink" title="获取并设置 CSS 类"></a>获取并设置 CSS 类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery - 获取并设置 CSS 类&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        /*</span><br><span class="line">          jQuery 拥有若干进行 CSS 操作的方法。我们将学习下面这些：</span><br><span class="line">          addClass() - 向被选元素添加一个或多个类</span><br><span class="line">          removeClass() - 从被选元素删除一个或多个类</span><br><span class="line">          toggleClass() - 对被选元素进行添加/删除类的切换操作</span><br><span class="line">          css() - 设置或返回样式属性</span><br><span class="line">        */</span><br><span class="line">        /*</span><br><span class="line">           jQuery addClass() 方法</span><br><span class="line">           下面的例子展示如何向不同的元素添加 class 属性。</span><br><span class="line">           当然，在添加类时，您也可以选取多个元素：</span><br><span class="line">        */</span><br><span class="line">           $(document).ready(function () &#123;</span><br><span class="line">               $(&quot;.b1&quot;).click(function () &#123;</span><br><span class="line">                   $(&quot;.add h1,.add h2,.add p&quot;).addClass(&quot;blue&quot;);</span><br><span class="line">                   $(&quot;.add div&quot;).addClass(&quot;important&quot;);</span><br><span class="line">                &#125;);</span><br><span class="line"></span><br><span class="line">            $(&quot;.b2&quot;).click(function () &#123;</span><br><span class="line">                $(&quot;.add1 h1,.add1 h2,.add1 p&quot;).addClass(&quot;blue&quot;);</span><br><span class="line">                $(&quot;.add1 div&quot;).addClass(&quot;important&quot;);</span><br><span class="line">            &#125;);</span><br><span class="line">            //您也可以在 addClass() 方法中规定多个类：</span><br><span class="line">            $(&quot;.b3&quot;).click(function () &#123;</span><br><span class="line">                   $(&quot;.add2 div&quot;).addClass(&quot;important blue&quot;);</span><br><span class="line">               &#125;);</span><br><span class="line">           &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">           /*jQuery removeClass() 方法</span><br><span class="line">            下面的例子演示如何不同的元素中</span><br><span class="line">            删除指定的 class 属性：</span><br><span class="line">            */</span><br><span class="line">           $(document).ready(function () &#123;</span><br><span class="line">               $(&quot;.b4&quot;).click(function () &#123;</span><br><span class="line">                    $(&quot;.add3 h1,.add3 h2,.add3 p&quot;).removeClass(&quot;blue&quot;);</span><br><span class="line">                   &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">           /*</span><br><span class="line">           * jQuery toggleClass() 方法</span><br><span class="line">            下面的例子将展示如何使用 jQuery toggleClass() 方法。</span><br><span class="line">            该方法对被选元素进行添加/删除类的切换操作：</span><br><span class="line">            */</span><br><span class="line">            $(document).ready(function () &#123;</span><br><span class="line">                $(&quot;.b5&quot;).click(function () &#123;</span><br><span class="line">                    $(&quot;.add4 h1,.add4 h2,.add4 p&quot;).toggleClass(&quot;blue&quot;);</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;);</span><br><span class="line">           &#125;);</span><br><span class="line"></span><br><span class="line"> &lt;/script&gt;</span><br><span class="line">    &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">        .important&#123;</span><br><span class="line">            font-weight: bold;</span><br><span class="line">            font-size: xx-large;;</span><br><span class="line">        &#125;</span><br><span class="line">        .blue&#123;</span><br><span class="line">            color: blue;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=&quot;add&quot;&gt;</span><br><span class="line">&lt;strong&gt;以下是增加类实验&lt;/strong&gt;</span><br><span class="line">&lt;h1&gt;标题 1&lt;/h1&gt;</span><br><span class="line">&lt;h2&gt;标题 2&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;p&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">&lt;div&gt;这是非常重要的文本！&lt;/div&gt;</span><br><span class="line">&lt;br&gt;</span><br><span class="line">&lt;button class=&quot;b1&quot;&gt;向元素添加类&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;add1&quot;&gt;</span><br><span class="line">    &lt;h1&gt;标题 2&lt;/h1&gt;</span><br><span class="line">    &lt;h2&gt;标题 3&lt;/h2&gt;</span><br><span class="line">    &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;div&gt;这是非常重要的文本！&lt;/div&gt;</span><br><span class="line">    &lt;br&gt;</span><br><span class="line">    &lt;button class=&quot;b2&quot;&gt;向元素添加类&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;add2&quot;&gt;</span><br><span class="line">    &lt;h1&gt;标题 2&lt;/h1&gt;</span><br><span class="line">    &lt;h2&gt;标题 3&lt;/h2&gt;</span><br><span class="line">    &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;div&gt;这是非常重要的文本！&lt;/div&gt;</span><br><span class="line">    &lt;br&gt;</span><br><span class="line">    &lt;button class=&quot;b3&quot;&gt;向元素添加类&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;hr&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;add3&quot;&gt;</span><br><span class="line">    &lt;strong&gt;以下是删除类实验&lt;/strong&gt;</span><br><span class="line">    &lt;h1 class=&quot;blue&quot;&gt;标题 1&lt;/h1&gt;</span><br><span class="line">    &lt;h2 class=&quot;blue&quot;&gt;标题 2&lt;/h2&gt;</span><br><span class="line">    &lt;p class=&quot;blue&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;br&gt;</span><br><span class="line">    &lt;button class=&quot;b4&quot;&gt;从元素上删除类&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;add4&quot;&gt;</span><br><span class="line">    &lt;strong&gt;以下是切换类实验&lt;/strong&gt;</span><br><span class="line">    &lt;h1&gt;标题 1&lt;/h1&gt;</span><br><span class="line">    &lt;h2&gt;标题 2&lt;/h2&gt;</span><br><span class="line">    &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;br&gt;</span><br><span class="line">    &lt;button class=&quot;b5&quot;&gt;从元素上删除类&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="jQuery-css-方法"><a href="#jQuery-css-方法" class="headerlink" title="jQuery css() 方法"></a>jQuery css() 方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery - css() 方法&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    /*</span><br><span class="line">    jQuery css() 方法</span><br><span class="line">    css() 方法设置或返回被选元素的一个或多个样式属性。</span><br><span class="line">     */</span><br><span class="line">    $(document).ready(function () &#123;</span><br><span class="line">        $(&quot;.b1&quot;).click(function () &#123;</span><br><span class="line">            //下面的例子将返回首个匹配元素的 background-color 值：</span><br><span class="line">            alert(&quot;Background color=&quot;+$(&quot;.c1 p&quot;).css(&quot;background-color&quot;));</span><br><span class="line">        &#125;);</span><br><span class="line">        //如需设置指定的 CSS 属性，请使用如下语法：</span><br><span class="line"></span><br><span class="line">        $(&quot;.b2&quot;).click(function () &#123;</span><br><span class="line">            //下面的例子将返回首个匹配元素的 background-color 值：</span><br><span class="line">           $(&quot;.c2 p&quot;).css(&quot;background-color&quot;,&quot;yellow&quot;);</span><br><span class="line">        &#125;);</span><br><span class="line">        $(&quot;.b3&quot;).click(function () &#123;</span><br><span class="line">            //下面的例子将返回首个匹配元素的 background-color 值：</span><br><span class="line">            $(&quot;.c3 p&quot;).css(&#123;&quot;background-color&quot;:&quot;yellow&quot;,&quot;font-size&quot;:&quot;200%&quot;&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=&quot;c1&quot;&gt;</span><br><span class="line">&lt;h2&gt;这是标题&lt;/h2&gt;</span><br><span class="line">&lt;p style=&quot;background-color:#ff0000&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;p style=&quot;background-color:#00ff00&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;p style=&quot;background-color:#0000ff&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;button class=&quot;b1&quot;&gt;返回 p 元素的背景色&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;c2&quot;&gt;</span><br><span class="line">    &lt;h2&gt;这是标题&lt;/h2&gt;</span><br><span class="line">    &lt;p style=&quot;background-color:#ff0000&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;background-color:#00ff00&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;background-color:#0000ff&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;button class=&quot;b2&quot;&gt;设置 p 元素的背景色&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;c3&quot;&gt;</span><br><span class="line">    &lt;h2&gt;这是标题&lt;/h2&gt;</span><br><span class="line">    &lt;p style=&quot;background-color:#ff0000&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;background-color:#00ff00&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;p style=&quot;background-color:#0000ff&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">    &lt;button class=&quot;b3&quot;&gt;设置 p 元素的样式&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="jQuery-尺寸"><a href="#jQuery-尺寸" class="headerlink" title="jQuery - 尺寸"></a>jQuery - 尺寸</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery - 尺寸&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        //通过 jQuery，很容易处理元素和浏览器窗口的尺寸。</span><br><span class="line">        /*jQuery 尺寸 方法</span><br><span class="line">        jQuery 提供多个处理尺寸的重要方法：</span><br><span class="line">        width()</span><br><span class="line">        height()</span><br><span class="line">        innerWidth()</span><br><span class="line">        innerHeight()</span><br><span class="line">        outerWidth()</span><br><span class="line">        outerHeight()*/</span><br><span class="line">        /*jQuery width() 和 height() 方法</span><br><span class="line">        width() 方法设置或返回元素的宽度（不包括内边距、边框或外边距）。</span><br><span class="line">        height() 方法设置或返回元素的高度（不包括内边距、边框或外边距）。</span><br><span class="line">        下面的例子返回指定的 &lt;div&gt; 元素的宽度和高度：</span><br><span class="line">        */</span><br><span class="line">        $(document).ready(function () &#123;</span><br><span class="line">            $(&quot;.c1&quot;).click(function () &#123;</span><br><span class="line">                var txt=&quot;&quot;;</span><br><span class="line">                txt+=&quot;width of div:&quot;+$(&quot;#div1&quot;).width()+&quot;&lt;/br&gt;&quot;;</span><br><span class="line">                txt+=&quot;height of div:&quot;+$(&quot;#div1&quot;).height()+&quot;&lt;/br&gt;&quot;;</span><br><span class="line">                $(&quot;#div1&quot;).html(txt);</span><br><span class="line">            &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            /*</span><br><span class="line">            jQuery innerWidth() 和 innerHeight() 方法</span><br><span class="line">            innerWidth() 方法返回元素的宽度（包括内边距）。</span><br><span class="line">            innerHeight() 方法返回元素的高度（包括内边距）。</span><br><span class="line">            下面的例子返回指定的 &lt;div&gt; 元素的 inner-width/height：</span><br><span class="line">            */</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            $(&quot;.c2&quot;).click(function () &#123;</span><br><span class="line">                var txt=&quot;&quot;;</span><br><span class="line">                txt+=&quot;width of div:&quot;+$(&quot;#div2&quot;).innerWidth()+&quot;&lt;/br&gt;&quot;;</span><br><span class="line">                txt+=&quot;height of div:&quot;+$(&quot;#div2&quot;).innerHeight()+&quot;&lt;/br&gt;&quot;;</span><br><span class="line">                $(&quot;#div2&quot;).html(txt);</span><br><span class="line">            &#125;)</span><br><span class="line">            /*</span><br><span class="line">            jQuery outerWidth() 和 outerHeight() 方法</span><br><span class="line">            outerWidth() 方法返回元素的宽度（包括内边距和边框）。</span><br><span class="line">            outerHeight() 方法返回元素的高度（包括内边距和边框）。</span><br><span class="line">            下面的例子返回指定的 &lt;div&gt; 元素的 outer-width/height：</span><br><span class="line">            */</span><br><span class="line">            $(&quot;.c3&quot;).click(function () &#123;</span><br><span class="line">                var txt=&quot;&quot;;</span><br><span class="line">                txt+=&quot;width of div:&quot;+$(&quot;#div3&quot;).outerHeight()+&quot;&lt;/br&gt;&quot;;</span><br><span class="line">                txt+=&quot;height of div:&quot;+$(&quot;#div3&quot;).outerWidth()+&quot;&lt;/br&gt;&quot;;</span><br><span class="line">                $(&quot;#div3&quot;).html(txt);</span><br><span class="line">            &#125;);</span><br><span class="line">            /*</span><br><span class="line">            jQuery - 更多的 width() 和 height()</span><br><span class="line">            下面的例子返回文档（HTML 文档）$(document)和窗口$(window)（浏览器视口）的宽度和高度：</span><br><span class="line">             */</span><br><span class="line">            $(&quot;.c4&quot;).click(function () &#123;</span><br><span class="line">                var txt=&quot;&quot;;</span><br><span class="line">                txt+=&quot;Document width/height: &quot; + $(document).width();</span><br><span class="line">                txt+=&quot;x&quot; + $(document).height() + &quot;\n&quot;;</span><br><span class="line">                txt+=&quot;Window width/height: &quot; + $(window).width();</span><br><span class="line">                txt+=&quot;x&quot; + $(window).height();</span><br><span class="line">                alert(txt);</span><br><span class="line">            &#125;);</span><br><span class="line"></span><br><span class="line">        /*</span><br><span class="line">        *设置宽度和高度</span><br><span class="line">        * 下面的例子设置指定的 &lt;div&gt; 元素的宽度和高度：</span><br><span class="line">      */</span><br><span class="line">        $(&quot;.c5&quot;).click(function () &#123;</span><br><span class="line">            $(&quot;#div5&quot;).width(500).height(500);</span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">        &#125;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id=&quot;div1&quot; style=&quot;height: 100px;width: 300px;padding: 10px;</span><br><span class="line">margin: 10px;border:1px solid blue;background-color: lightblue;&quot;&gt;</span><br><span class="line">    &lt;button class=&quot;c1&quot;&gt;显示 div 的尺寸&lt;/button&gt;</span><br><span class="line">    &lt;p&gt;width() - 返回元素的宽度。&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;height() - 返回元素的高度。&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;div2&quot; style=&quot;height: 150px;width: 300px;padding: 10px;</span><br><span class="line">margin: 10px;border:1px solid blue;background-color: lightblue;&quot;&gt;</span><br><span class="line">    &lt;button class=&quot;c2&quot;&gt;显示 div 的尺寸&lt;/button&gt;</span><br><span class="line">    &lt;p&gt;width() - 返回元素的宽度（包括内边距)。&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;height() - 返回元素的高度（包括内边距）。&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;div3&quot; style=&quot;height: 150px;width: 300px;padding: 10px;</span><br><span class="line">margin: 10px;border:1px solid blue;background-color: lightblue;&quot;&gt;</span><br><span class="line">    &lt;button class=&quot;c3&quot;&gt;显示 div 的尺寸&lt;/button&gt;</span><br><span class="line">    &lt;p&gt;width() -返回元素的宽度（包括内边距、边框和外边距）。&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;height() - 返回元素的宽度（包括内边距、边框和外边距）。&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;div4&quot; style=&quot;height: 150px;width: 300px;padding: 10px;</span><br><span class="line">margin: 10px;border:1px solid blue;background-color: lightblue;&quot;&gt;</span><br><span class="line">    &lt;button class=&quot;c4&quot;&gt;显示 div 的尺寸&lt;/button&gt;</span><br><span class="line">    &lt;p&gt;width() -返回document,width窗体的宽度&lt;/p&gt;</span><br><span class="line">     &lt;p&gt;   （包括内边距、边框和外边距）。&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div id=&quot;div5&quot; style=&quot;height: 150px;width: 300px;padding: 10px;</span><br><span class="line">margin: 10px;border:1px solid blue;background-color: lightblue;&quot;&gt;</span><br><span class="line">    &lt;button class=&quot;c5&quot;&gt;设置 div 的尺寸&lt;/button&gt;</span><br><span class="line">    &lt;p&gt;width() - 设置为500px&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;height() -设置为500px&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="jQuery-遍历"><a href="#jQuery-遍历" class="headerlink" title="jQuery 遍历"></a>jQuery 遍历</h1> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--什么是遍历？--&gt;</span><br><span class="line">&lt;!--jQuery 遍历，意为“移动”，--&gt;</span><br><span class="line">&lt;!--用于根据其相对于其他元素的关系来“查找”（或选取）HTML 元素。--&gt;</span><br><span class="line">&lt;!--以某项选择开始，并沿着这个选择移动，直到抵达您期望的元素为止。--&gt;</span><br><span class="line">&lt;!--下图展示了一个家族树。通过 jQuery 遍历，您能够从被选（当前的）元素开始，--&gt;</span><br><span class="line">&lt;!--轻松地在家族树中向上移动（祖先），向下移动（子孙），水平移动（同胞）。--&gt;</span><br><span class="line">&lt;!--这种移动被称为对 DOM 进行遍历。--&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--&lt;div&gt; 元素是 &lt;ul&gt; 的父元素，同时是其中所有内容的祖先。--&gt;</span><br><span class="line">&lt;!--&lt;ul&gt; 元素是 &lt;li&gt; 元素的父元素，同时是 &lt;div&gt; 的子元素--&gt;</span><br><span class="line">&lt;!--左边的 &lt;li&gt; 元素是 &lt;span&gt; 的父元素，&lt;ul&gt; 的子元素，同时是 &lt;div&gt; 的后代。--&gt;</span><br><span class="line">&lt;!--&lt;span&gt; 元素是 &lt;li&gt; 的子元素，同时是 &lt;ul&gt; 和 &lt;div&gt; 的后代。--&gt;</span><br><span class="line">&lt;!--两个 &lt;li&gt; 元素是同胞（拥有相同的父元素）。--&gt;</span><br><span class="line">&lt;!--右边的 &lt;li&gt; 元素是 &lt;b&gt; 的父元素，&lt;ul&gt; 的子元素，同时是 &lt;div&gt; 的后代。--&gt;</span><br><span class="line">&lt;!--&lt;b&gt; 元素是右边的 &lt;li&gt; 的子元素，同时是 &lt;ul&gt; 和 &lt;div&gt; 的后代。--&gt;</span><br><span class="line">&lt;p&gt;提示：祖先是父、祖父、曾祖父等等。后代是子、孙、曾孙等等。同胞拥有相同的父。&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>##jQuery 遍历 - 祖先<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery 遍历 - 祖先&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        /*祖先是父、祖父或曾祖父等等。</span><br><span class="line">        通过 jQuery，您能够向上遍历 DOM 树，</span><br><span class="line">        以查找元素的祖先*/</span><br><span class="line"></span><br><span class="line">        /*</span><br><span class="line">        *向上遍历 DOM 树</span><br><span class="line">        *这些 jQuery 方法很有用，它们用于向上遍历 DOM 树：</span><br><span class="line">        *parent()</span><br><span class="line">        *parents()</span><br><span class="line">        *parentsUntil()*/</span><br><span class="line">        /* jQuery parent() 方法</span><br><span class="line">        parent() 方法返回被选元素的直接父元素。</span><br><span class="line">        该方法只会向上一级对 DOM 树进行遍历。</span><br><span class="line">        下面的例子返回每个 &lt;span&gt; 元素的的直接父元素：*/</span><br><span class="line">        /* $(document).ready(function () &#123;</span><br><span class="line">            $(&quot;span&quot;).parent().css(&#123;&quot;color&quot;:&quot;red&quot;,&quot;border&quot;:&quot;2px solid red&quot;&#125;);</span><br><span class="line"></span><br><span class="line">        &#125;); */</span><br><span class="line">        /*</span><br><span class="line">        * jQuery parents() 方法</span><br><span class="line">        parents() 方法返回被选元素的所有祖先元素，</span><br><span class="line">        它一路向上直到文档的根元素 (&lt;html&gt;)。*/</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;span&quot;).parents().css(&#123;&quot;color&quot;:&quot;yellow&quot;,&quot;border&quot;:&quot;2px solid yellow&quot;&#125;);</span><br><span class="line"></span><br><span class="line">        &#125;)*/</span><br><span class="line">        /*</span><br><span class="line">        下面的例子返回所有 &lt;span&gt; 元素的所有祖先，</span><br><span class="line">        并且它是 &lt;ul&gt; 元素：</span><br><span class="line">         */</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;span&quot;).parents(&quot;ul&quot;).css(&#123;&quot;color&quot;:&quot;yellow&quot;,&quot;border&quot;:&quot;2px solid yellow&quot;&#125;);</span><br><span class="line"></span><br><span class="line">        &#125;)*/</span><br><span class="line">        /*</span><br><span class="line">        jQuery parentsUntil() 方法</span><br><span class="line">        parentsUntil() 方法返回介于两个给定元素之间的所有祖先元素。</span><br><span class="line">        下面的例子返回介于 &lt;span&gt; 与 &lt;div&gt; 元素之间的所有祖先元素：</span><br><span class="line">        */</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;span&quot;).parentsUntil(&quot;div&quot;).css(&#123;&quot;color&quot;:&quot;blue&quot;,&quot;border&quot;:&quot;2px solid blue&quot;&#125;);</span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line">        */</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        .ancestors *</span><br><span class="line">        &#123;</span><br><span class="line">            display: block;</span><br><span class="line">            border: 2px solid lightgrey;</span><br><span class="line">            color: lightgrey;</span><br><span class="line">            padding: 5px;</span><br><span class="line">            margin: 15px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class=&quot;ancestors&quot;&gt;</span><br><span class="line">    &lt;div style=&quot;width:500px;&quot;&gt;div (曾祖父)</span><br><span class="line">        &lt;ul&gt;ul (祖父)</span><br><span class="line">            &lt;li&gt;li (直接父)</span><br><span class="line">                &lt;span&gt;span&lt;/span&gt;</span><br><span class="line">            &lt;/li&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;div style=&quot;width:500px;&quot;&gt;div (祖父)</span><br><span class="line">        &lt;ul&gt;</span><br><span class="line">        &lt;p&gt;p (直接父)</span><br><span class="line">            &lt;span&gt;span&lt;/span&gt;</span><br><span class="line">        &lt;/p&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="jQuery-遍历-后代"><a href="#jQuery-遍历-后代" class="headerlink" title="jQuery 遍历 - 后代"></a>jQuery 遍历 - 后代</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery 遍历 - 后代&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        //后代是子、孙、曾孙等等。</span><br><span class="line">        //通过 jQuery，您能够向下遍历 DOM 树，以查找元素的后代。</span><br><span class="line">        //向下遍历 DOM 树,下面是两个用于向下遍历 DOM 树的 jQuery 方法：</span><br><span class="line">        // children(),find()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //jQuery children() 方法,children() 方法返回被选元素的所有直接子元素。</span><br><span class="line">        //该方法只会向下一级对 DOM 树进行遍历。</span><br><span class="line">        //下面的例子返回每个 &lt;div&gt; 元素的所有直接子元素：</span><br><span class="line">        $(document).ready(function () &#123;</span><br><span class="line">            $(&quot;#i1&quot;).children().css(&#123;&quot;color&quot;:&quot;red&quot;,&quot;border&quot;:&quot;2px solid red&quot;&#125;);</span><br><span class="line">            //您也可以使用可选参数来过滤对子元素的搜索。</span><br><span class="line">            //下面的例子返回类名为 &quot;c2&quot; 的所有 &lt;p&gt; 元素，</span><br><span class="line">            // 并且它们是 &lt;div&gt; 的直接子元素：</span><br><span class="line">            $(&quot;div&quot;).children(&quot;p.c2&quot;).css(&#123;&quot;color&quot;:&quot;blue&quot;,&quot;border&quot;:&quot;2px solid blue&quot;&#125;)</span><br><span class="line">        &#125;);</span><br><span class="line">        //jQuery find() 方法</span><br><span class="line">        //find() 方法返回被选元素的后代元素，一路向下直到最后一个后代。</span><br><span class="line">        //下面的例子返回属于 &lt;div&gt; 后代的所有 &lt;span&gt; 元素：</span><br><span class="line">        $(document).ready(function()&#123;</span><br><span class="line">            $(&quot;#i3&quot;).find(&quot;span&quot;).css(&#123;&quot;color&quot;:&quot;yellow&quot;,&quot;border&quot;:&quot;2px solid yellow&quot;&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">        //下面的例子返回 &lt;div&gt; 的所有后代：</span><br><span class="line">        $(document).ready(function()&#123;</span><br><span class="line">            $(&quot;#i4&quot;).find(&quot;*&quot;).css(&#123;&quot;color&quot;:&quot;#0011FF&quot;,&quot;border&quot;:&quot;2px solid #0011FF&quot;&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        .descendants *&#123;</span><br><span class="line">            display: block;</span><br><span class="line">            border: 1px solid red;</span><br><span class="line">            color: lightgray;</span><br><span class="line">            padding: 15px;</span><br><span class="line">            margin: 15px;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;descendants&quot; style=&quot;width:500px;&quot; id=&quot;i1&quot;&gt;div (当前元素)</span><br><span class="line">        &lt;p&gt;p (子)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">        &lt;p&gt;p (child)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;descendants&quot; style=&quot;width:500px;&quot; id=&quot;i2&quot;&gt;div (当前元素)</span><br><span class="line">        &lt;p class=&quot;c2&quot;&gt;p (子)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">        &lt;p class=&quot;c2&quot;&gt;p (child)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;descendants&quot; style=&quot;width:500px;&quot; id=&quot;i3&quot;&gt;div (当前元素)</span><br><span class="line">        &lt;p class=&quot;c3&quot;&gt;p (子)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">        &lt;p class=&quot;c3&quot;&gt;p (child)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;descendants&quot; style=&quot;width:500px;&quot; id=&quot;i4&quot;&gt;div (当前元素)</span><br><span class="line">        &lt;p class=&quot;c3&quot;&gt;p (子)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">        &lt;p class=&quot;c3&quot;&gt;p (child)&lt;span&gt;span (孙)&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="jQuery-遍历-同胞"><a href="#jQuery-遍历-同胞" class="headerlink" title="jQuery 遍历 - 同胞"></a>jQuery 遍历 - 同胞</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery 遍历 - 同胞&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        //同胞拥有相同的父元素。</span><br><span class="line">        //通过 jQuery，您能够在 DOM 树中遍历元素的同胞元素。</span><br><span class="line">        //有许多有用的方法让我们在 DOM 树进行水平遍历：</span><br><span class="line">        // siblings()</span><br><span class="line">        // next()</span><br><span class="line">        // nextAll()</span><br><span class="line">        // nextUntil()</span><br><span class="line">        // prev()</span><br><span class="line">        // prevAll()</span><br><span class="line">        // prevUntil()</span><br><span class="line">        //jQuery siblings() 方法</span><br><span class="line">        /*jQuery siblings() 方法</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        siblings() 方法返回被选元素的所有同胞元素。</span><br><span class="line">        下面的例子返回 &lt;h2&gt; 的所有同胞元素：*/</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).siblings().css(&#123;&quot;color&quot;:&quot;#37D315&quot;,&quot;border&quot;:&quot;2px solid black&quot;&#125;);</span><br><span class="line">        &#125;)*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //您也可以使用可选参数来过滤对同胞元素的搜索。</span><br><span class="line">        //下面的例子返回属于 &lt;h2&gt; 的同胞元素的所有 &lt;p&gt; 元素：</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).siblings(&quot;p&quot;).css(&#123;&quot;color&quot;:&quot;#D3008C&quot;,&quot;border&quot;:&quot;2px solid #D3008C&quot;&#125;);</span><br><span class="line">        &#125;)*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //jQuery next() 方法</span><br><span class="line">        //next() 方法返回被选元素的下一个同胞元素。</span><br><span class="line">        //该方法只返回一个元素。</span><br><span class="line">        //下面的例子返回 &lt;h2&gt; 的下一个同胞元素：</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).next().css(&#123;&quot;color&quot;:&quot;#D3008C&quot;,&quot;border&quot;:&quot;2px solid #D3008C&quot;&#125;);</span><br><span class="line">        &#125;)*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        /*jQuery nextAll() 方法</span><br><span class="line">        nextAll() 方法返回被选元素的所有跟随的同胞元素。</span><br><span class="line">下面的例子返回 &lt;h2&gt; 的所有跟随的同胞元素：*/</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).nextAll().css(&#123;&quot;color&quot;:&quot;#0055d3&quot;,&quot;border&quot;:&quot;2px solid #0055d3&quot;&#125;);</span><br><span class="line">        &#125;);*/</span><br><span class="line"></span><br><span class="line">        /*jQuery nextUntil() 方法</span><br><span class="line">        nextUntil() 方法返回介于两个给定参数之间的所有跟随的同胞元素。</span><br><span class="line">下面的例子返回介于 &lt;h2&gt; 与 &lt;h6&gt; 元素之间的所有同胞元素：*/</span><br><span class="line">        $(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).nextUntil(&quot;h6&quot;).css(&#123;&quot;color&quot;:&quot;#9cd3af&quot;,&quot;border&quot;:&quot;2px solid #9cd3af&quot;&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        /*jQuery prev(), prevAll() &amp; prevUntil() 方法</span><br><span class="line">        prev(), prevAll() 以及 prevUntil() 方法的工作方式与上面的方法类似，只不过方向相反而已：</span><br><span class="line">        它们返回的是前面的同胞元素（在 DOM 树中沿着同胞元素向后遍历，而不是向前）。*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        .siblings *</span><br><span class="line">        &#123;</span><br><span class="line">            display: block;</span><br><span class="line">            border: 2px solid lightgrey;</span><br><span class="line">            color: lightgrey;</span><br><span class="line">            padding: 5px;</span><br><span class="line">            margin: 15px;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body class=&quot;siblings&quot;&gt;</span><br><span class="line">    &lt;div&gt;div (父)</span><br><span class="line">        &lt;p&gt;p&lt;/p&gt;</span><br><span class="line">        &lt;span&gt;span&lt;/span&gt;</span><br><span class="line">        &lt;h2&gt;h2&lt;/h2&gt;</span><br><span class="line">        &lt;h3&gt;h3&lt;/h3&gt;</span><br><span class="line">        &lt;p&gt;p&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="jQuery-遍历-过滤"><a href="#jQuery-遍历-过滤" class="headerlink" title="jQuery 遍历 - 过滤"></a>jQuery 遍历 - 过滤</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery 遍历 - 同胞&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        //同胞拥有相同的父元素。</span><br><span class="line">        //通过 jQuery，您能够在 DOM 树中遍历元素的同胞元素。</span><br><span class="line">        //有许多有用的方法让我们在 DOM 树进行水平遍历：</span><br><span class="line">        // siblings()</span><br><span class="line">        // next()</span><br><span class="line">        // nextAll()</span><br><span class="line">        // nextUntil()</span><br><span class="line">        // prev()</span><br><span class="line">        // prevAll()</span><br><span class="line">        // prevUntil()</span><br><span class="line">        //jQuery siblings() 方法</span><br><span class="line">        /*jQuery siblings() 方法</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        siblings() 方法返回被选元素的所有同胞元素。</span><br><span class="line">        下面的例子返回 &lt;h2&gt; 的所有同胞元素：*/</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).siblings().css(&#123;&quot;color&quot;:&quot;#37D315&quot;,&quot;border&quot;:&quot;2px solid black&quot;&#125;);</span><br><span class="line">        &#125;)*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //您也可以使用可选参数来过滤对同胞元素的搜索。</span><br><span class="line">        //下面的例子返回属于 &lt;h2&gt; 的同胞元素的所有 &lt;p&gt; 元素：</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).siblings(&quot;p&quot;).css(&#123;&quot;color&quot;:&quot;#D3008C&quot;,&quot;border&quot;:&quot;2px solid #D3008C&quot;&#125;);</span><br><span class="line">        &#125;)*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        //jQuery next() 方法</span><br><span class="line">        //next() 方法返回被选元素的下一个同胞元素。</span><br><span class="line">        //该方法只返回一个元素。</span><br><span class="line">        //下面的例子返回 &lt;h2&gt; 的下一个同胞元素：</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).next().css(&#123;&quot;color&quot;:&quot;#D3008C&quot;,&quot;border&quot;:&quot;2px solid #D3008C&quot;&#125;);</span><br><span class="line">        &#125;)*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        /*jQuery nextAll() 方法</span><br><span class="line">        nextAll() 方法返回被选元素的所有跟随的同胞元素。</span><br><span class="line">下面的例子返回 &lt;h2&gt; 的所有跟随的同胞元素：*/</span><br><span class="line">        /*$(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).nextAll().css(&#123;&quot;color&quot;:&quot;#0055d3&quot;,&quot;border&quot;:&quot;2px solid #0055d3&quot;&#125;);</span><br><span class="line">        &#125;);*/</span><br><span class="line"></span><br><span class="line">        /*jQuery nextUntil() 方法</span><br><span class="line">        nextUntil() 方法返回介于两个给定参数之间的所有跟随的同胞元素。</span><br><span class="line">下面的例子返回介于 &lt;h2&gt; 与 &lt;h6&gt; 元素之间的所有同胞元素：*/</span><br><span class="line">        $(document).ready(function () &#123;</span><br><span class="line">            $(&quot;h2&quot;).nextUntil(&quot;h6&quot;).css(&#123;&quot;color&quot;:&quot;#9cd3af&quot;,&quot;border&quot;:&quot;2px solid #9cd3af&quot;&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        /*jQuery prev(), prevAll() &amp; prevUntil() 方法</span><br><span class="line">        prev(), prevAll() 以及 prevUntil() 方法的工作方式与上面的方法类似，只不过方向相反而已：</span><br><span class="line">        它们返回的是前面的同胞元素（在 DOM 树中沿着同胞元素向后遍历，而不是向前）。*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        .siblings *</span><br><span class="line">        &#123;</span><br><span class="line">            display: block;</span><br><span class="line">            border: 2px solid lightgrey;</span><br><span class="line">            color: lightgrey;</span><br><span class="line">            padding: 5px;</span><br><span class="line">            margin: 15px;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body class=&quot;siblings&quot;&gt;</span><br><span class="line">    &lt;div&gt;div (父)</span><br><span class="line">        &lt;p&gt;p&lt;/p&gt;</span><br><span class="line">        &lt;span&gt;span&lt;/span&gt;</span><br><span class="line">        &lt;h2&gt;h2&lt;/h2&gt;</span><br><span class="line">        &lt;h3&gt;h3&lt;/h3&gt;</span><br><span class="line">        &lt;p&gt;p&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="jQuery-AJAX-简介"><a href="#jQuery-AJAX-简介" class="headerlink" title="jQuery - AJAX 简介"></a>jQuery - AJAX 简介</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery - AJAX 简介&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        $(document).ready(function () &#123;</span><br><span class="line">            $(&quot;#btn1&quot;).click(function () &#123;</span><br><span class="line">                $(&quot;#test&quot;).load(&apos;text.txt&apos;);</span><br><span class="line">            &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;!--AJAX 是与服务器交换数据的艺术，--&gt;</span><br><span class="line">&lt;!--它在不重载全部页面的情况下，实现了对部分网页的更新。--&gt;</span><br><span class="line">&lt;h3 id=&quot;test&quot;&gt;请点击下面的按钮，通过 jQuery AJAX 改变这段文本。&lt;/h3&gt;</span><br><span class="line">&lt;button id=&quot;btn1&quot; type=&quot;button&quot;&gt;获得外部的内容&lt;/button&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="创建文本文件text-txt"><a href="#创建文本文件text-txt" class="headerlink" title="创建文本文件text.txt"></a>创建文本文件text.txt</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hello world</span><br></pre></td></tr></table></figure>
+<h2 id="jQuery-AJAX-load-方法"><a href="#jQuery-AJAX-load-方法" class="headerlink" title="jQuery - AJAX load() 方法"></a>jQuery - AJAX load() 方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;jQuery - AJAX load() 方法&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;jquery-3.3.1.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        // &lt;!--jQuery load() 方法--&gt;</span><br><span class="line">        // &lt;!--jQuery load() 方法是简单但强大的 AJAX 方法。--&gt;</span><br><span class="line">        // &lt;!--load() 方法从服务器加载数据，并把返回的数据放入被选元素中。--&gt;</span><br><span class="line">        // &lt;!--语法：--&gt;</span><br><span class="line">        // &lt;!--$(selector).load(URL,data,callback);--&gt;</span><br><span class="line">        // &lt;!--必需的 URL 参数规定您希望加载的 URL。--&gt;</span><br><span class="line">        // &lt;!--可选的 data 参数规定与请求一同发送的查询字符串键/值对集合。--&gt;</span><br><span class="line">        // &lt;!--可选的 callback 参数是 load() 方法完成后所执行的函数名称--&gt;</span><br><span class="line">        // &lt;!--下面的例子把 &quot;demo_test.txt&quot; 文件中 id=&quot;p1&quot; 的元素的内容，--&gt;</span><br><span class="line">        // &lt;!--加载到指定的 &lt;div&gt; 元素中：--&gt;</span><br><span class="line">        // $(document).ready(function () &#123;</span><br><span class="line">        //     $(&quot;#b1&quot;).click(function () &#123;</span><br><span class="line">        //         $(&quot;#div1&quot;).load(&quot;text2.txt #p1&quot;);</span><br><span class="line">        // &#125;);</span><br><span class="line">        // &#125;);</span><br><span class="line">        //可选的 callback 参数规定当 load() 方法完成后所要允许的回调函数。回调函数可以设置不同的参数：</span><br><span class="line">        // responseTxt - 包含调用成功时的结果内容</span><br><span class="line">        // statusTXT - 包含调用的状态</span><br><span class="line">        // xhr - 包含 XMLHttpRequest 对象</span><br><span class="line">        // 下面的例子会在 load() 方法完成后显示一个提示框。如果 load() 方法已成功，则显示“外部内容加载成功！”，</span><br><span class="line">        // 而如果失败，则显示错误消息：</span><br><span class="line">        $(document).ready(function () &#123;</span><br><span class="line">            $(&quot;#b2&quot;).click(function () &#123;</span><br><span class="line">                $(&quot;#div2&quot;).load(&quot;text2.txt #p1&quot;,function (responseTxt,statusTxt,xhr) &#123;</span><br><span class="line">                    if (statusTxt==&quot;success&quot;)</span><br><span class="line">                        alert(&quot;外部内容加载成功&quot;);</span><br><span class="line">                    if (statusTxt == &quot;error&quot;)</span><br><span class="line">                        alert(&quot;Error:&quot;+xhr.status+&quot;:&quot;+xhr.statusText);</span><br><span class="line">                &#125;);</span><br><span class="line">                &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id=&quot;div1&quot;&gt;&lt;h2&gt;使用 jQuery AJAX 来改变文本&lt;/h2&gt;&lt;/div&gt;</span><br><span class="line">&lt;button id=&quot;b1&quot;&gt;获得外部内容&lt;/button&gt;</span><br><span class="line">&lt;div id=&quot;div2&quot;&gt;&lt;h2&gt;使用 jQuery AJAX 来改变文本&lt;/h2&gt;&lt;/div&gt;</span><br><span class="line">&lt;button id=&quot;b2&quot;&gt;获得外部内容&lt;/button&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="创建文本文件text-txt-1"><a href="#创建文本文件text-txt-1" class="headerlink" title="创建文本文件text.txt"></a>创建文本文件text.txt</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;p1&quot;&gt;这是P1 &lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;p2&quot;&gt;这是P2 &lt;/p&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+		<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+		
+		</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JQuery/" rel="tag"><i class="fa fa-tag"></i> JQuery</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/13/hexo_build/" rel="next" title="hexo各种问题">
+                <i class="fa fa-chevron-left"></i> hexo各种问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTkxMy84NDc3"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3215320780,615845425&fm=26&gp=0.jpg"
+                alt="Mr.Tao" />
+            
+              <p class="site-author-name" itemprop="name">Mr.Tao</p>
+              <p class="site-description motion-element" itemprop="description">相信技术可以改变一切</p>
+          </div>
+					<!--my custom code begin--> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script> <script type="text/javascript">
+								$("#sidebar").hover(function(){
+									$("#mydivshow").velocity('stop').velocity({opacity: 1});
+								},function(){
+									$("#mydivshow").velocity('stop').velocity({opacity: 0});
+								});
+			</script> <div id="mydivshow" class="mydivshow"> 
+			<!--my custom code end-->
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tt0821" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:1396861976@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://zhihu.com/people/tao-ha-ha-ha-7" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-zhihu"></i>Zhihu</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+						<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2266358133&auto=1&height=430"></iframe>
+          
+
+        </div>
+				<!--my custom code begin-->
+				</div>
+				<!--my custom code end-->
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，"><span class="nav-number">1.</span> <span class="nav-text">最近半个月没时间去学习前端了，昨天复习了一整天，发现什么进制什么都不会，之前学过的都忘了，</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧"><span class="nav-number">2.</span> <span class="nav-text">是时候要专心复习软考了，下视频重头开始，把这两天打的代码整理一下吧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#获取并设置-CSS-类"><span class="nav-number">2.1.</span> <span class="nav-text">获取并设置 CSS 类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery-css-方法"><span class="nav-number">2.2.</span> <span class="nav-text">jQuery css() 方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery-尺寸"><span class="nav-number">2.3.</span> <span class="nav-text">jQuery - 尺寸</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-遍历"><span class="nav-number">3.</span> <span class="nav-text">jQuery 遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery-遍历-后代"><span class="nav-number">3.1.</span> <span class="nav-text">jQuery 遍历 - 后代</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-遍历-同胞"><span class="nav-number">4.</span> <span class="nav-text">jQuery 遍历 - 同胞</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery-遍历-过滤"><span class="nav-number">4.1.</span> <span class="nav-text">jQuery 遍历 - 过滤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#jQuery-AJAX-简介"><span class="nav-number">5.</span> <span class="nav-text">jQuery - AJAX 简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建文本文件text-txt"><span class="nav-number">6.</span> <span class="nav-text">创建文本文件text.txt</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#jQuery-AJAX-load-方法"><span class="nav-number">6.1.</span> <span class="nav-text">jQuery - AJAX load() 方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建文本文件text-txt-1"><span class="nav-number">7.</span> <span class="nav-text">创建文本文件text.txt</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.Tao</span>
+
+  
+</div>
+
+
+<div class="powered-by"> 
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv"> 
+	本站访客数:<span id="busuanzi_value_site_uv"></span> 
+</span> 
+</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共6.2k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("ViCVPyXMcUehwQvxTnxHALbN-gzGzoHsz", "K08oc8UUQU2LtAwFbDWFfqUR");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+	
+	<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+	
+	undefined
+	！
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
